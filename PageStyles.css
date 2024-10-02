@@ -1,0 +1,338 @@
+/* src/components/PageStyles.css */
+.page-container {
+  max-width: 5000px; /* Adjusted for better responsiveness */
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f0f4ff; /* Light background color for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+  color: #004080;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  text-align: center;
+  color: #0059b3;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+input,
+select,
+textarea {
+  padding: 12px;
+  border: 1px solid #3c5bc1;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1a73e8; /* A different blue color on focus */
+  box-shadow: 0 0 5px rgba(26, 115, 232, 0.5); /* Soft glow effect on focus */
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* .primary-button {
+  background-color: #004080;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.primary-button:hover {
+  background-color: #0059b3;
+  transform: translateY(-2px); 
+} */
+
+.page-description {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  text-align: center; /* Centered description */
+}
+
+.form-container {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #3c5bc1;
+  border-radius: 4px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+input[type="file"]:focus {
+  outline: none;
+  border-color: #1a73e8; /* A different blue color on focus */
+  box-shadow: 0 0 5px rgba(26, 115, 232, 0.5); /* Soft glow effect on focus */
+}
+
+/* Doctor card styles */
+.doctor-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.doctor-card {
+  flex: 1 0 30%;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgba(58, 114, 210, 0.2);
+  transition: border-color 0.3s, background-color 0.3s; /* Smooth transitions */
+}
+
+.doctor-card.selected {
+  border-color: #004080;
+  background-color: #e6f0ff;
+}
+
+.doctor-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+
+/* Add this to your PageStyles.css */
+.chart-container {
+  margin: 20px 0; /* Adds space above and below the chart */
+  padding: 1rem; /* Padding for the chart container */
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+  border-radius: 8px; /* Rounded corners for the chart container */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.data-table {
+  margin: 20px 0;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+  background-color: rgba(60, 91, 193, 0.7);
+  color: white;
+}
+canvas {
+  max-height: 700px; /* Set max height for pie chart */
+}
+
+/* Hero Section Styles */
+.hero-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(85, 102, 159, 0.1);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 400px; /* Set max height for hero image */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+/* Features Section Styles */
+.features-section {
+  text-align: center;
+  margin: 2rem 0;
+  
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.feature-card {
+  background-color: rgba(133, 146, 188, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.feature-image {
+  width: 100%;
+  height: 150px; /* Set height for feature images */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 5px;
+}
+
+/* Call to Action Section Styles */
+.cta-section {
+  text-align: center;
+  padding: 2rem;
+  /* background-color: rgba(60, 91, 193, 0.2); Light blue background */
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.cta-section h2 {
+  color: #004080; /* Dark blue color for CTA heading */
+}
+
+.cta-section p {
+  margin-bottom: 1rem;
+}
+
+/* Page Description */
+.page-description {
+  color: #555;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Button Styles */
+.primary-button {
+  background-color: #004080;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem; /* Space above buttons */
+}
+
+.primary-button:hover {
+  background-color: #0059b3; /* Change on hover */
+}
+
+
+/* src/components/PageStyles.css */
+
+/* Testimonials Section Styles */
+.testimonials-section {
+  /* background-color: rgba(177, 187, 220, 0.1); Light blue background */
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.testimonials-grid {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px;
+  height: 200px;
+}
+
+/* Events Section Styles */
+.events-section {
+  padding: 2rem;
+  /* background-color: rgba(143, 155, 199, 0.2);  */
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.events-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* Newsletter Section Styles */
+.newsletter-section {
+  
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(85, 102, 159, 0.1); 
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: 1px solid #3c5bc1;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.newsletter-form button {
+  background-color: #004080;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsletter-form button:hover {
+  background-color: #0059b3; /* Change on hover */
+}
+
+
+
